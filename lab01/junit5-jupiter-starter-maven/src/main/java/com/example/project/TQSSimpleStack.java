@@ -30,8 +30,6 @@ public class TQSSimpleStack<T> {
         } else {
             this.stack.add(n);
         }
-        
-        this.stack.add(n);
     }
 
     public T pop(){
@@ -56,5 +54,9 @@ public class TQSSimpleStack<T> {
 
     public boolean isEmpty(){
         return this.stack.size() == 0;
+    }
+
+    public void clear() {
+        this.stack.clear();
     }
 }
