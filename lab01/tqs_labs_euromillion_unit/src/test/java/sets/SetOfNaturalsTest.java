@@ -61,5 +61,23 @@ public class SetOfNaturalsTest {
 
     }
 
+    @Test
+    @DisplayName("Verify if there's an error when trying to add an existing value (duplicate)")
+    public void testAddDuplicate() {
+        assertThrows(IllegalArgumentException.class, () -> setB.add(10), "ERROR! The value added already exists!");
+    }
 
+    @Test
+    @DisplayName("Verify if there's an error when trying to add a duplicate array")
+    public void testAddDuplicateArray() {
+        int[] a = {1, 2, 3, 4, 2};
+
+        assertThrows(IllegalArgumentException.class, () -> setA.fromArray(a), "ERROR! There's a duplicated value in the array!");
+    }
+
+    @Test
+    @DisplayName("Intersection marked as true, when it doesn't exists")
+    public void testFalseIntersection() {
+        assertFalse(setA.intersects(setB), "ERROR! This intersection doesn't exists!");
+    }
 }
