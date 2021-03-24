@@ -27,6 +27,13 @@ public class AddressResolverIT {
         //Address result = resolver.findAddressForLocation(40.640661, -8.656688);
         //assertEquals( result, new Address( "Cais do Alboi", "Glória e Vera Cruz", "Centro", "3800-246", null) );
 
+        /*
+         * 
+         * 
+         * Exercício resolvido no GeocodeTestIT.java
+         * 
+         * 
+         */
     }
 
     @Test
