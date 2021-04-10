@@ -11,22 +11,19 @@ public class DeveloperApplyPage {
     @FindBy(tagName = "h1")
     WebElement heading;
 
-    @FindBy(id="developer_email")
+    @FindBy(id = "talent_create_applicant_email")
     WebElement developer_email;
 
-    @FindBy(id = "developer_password")
+    @FindBy(id = "talent_create_applicant_password")
     WebElement developer_password;
 
-    @FindBy(id = "developer_password_confirmation")
+    @FindBy(id = "talent_create_applicant_password_confirmation")
     WebElement developer_password_confirmation;
 
-    @FindBy(id = "developer_full_name")
+    @FindBy(id = "talent_create_applicant_full_name")
     WebElement developer_full_name;
 
-    @FindBy(id = "developer_skype")
-    WebElement developer_skype;
-
-    @FindBy(id ="save_new_developer")
+    @FindBy(id ="save_new_talent_create_applicant")
     WebElement join_toptal_button;
 
 
@@ -58,16 +55,11 @@ public class DeveloperApplyPage {
         developer_full_name.sendKeys(fullname);
     }
 
-    public void setDeveloper_skype (String skype){
-        developer_skype.clear();
-        developer_skype.sendKeys(skype);
-    }
-
     public void clickOnJoin(){
         join_toptal_button.click();
     }
     public boolean isPageOpened(){
         //Assertion
-        return heading.getText().toString().contains("Apply to join our network as a developer");
+        return heading.getText().toString().contains("Apply to Join");
     }
 }

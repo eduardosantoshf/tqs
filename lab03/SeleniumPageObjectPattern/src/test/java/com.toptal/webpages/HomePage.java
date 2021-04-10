@@ -13,22 +13,27 @@ public class HomePage {
     private static String PAGE_URL="https://www.toptal.com";
 
     //Locators
+    @FindBy(tagName = "h1")
+    WebElement heading;
 
     //Apply as Developer Button
-    @FindBy(how = How.LINK_TEXT, using = "APPLY AS A DEVELOPER")
+    @FindBy(how = How.LINK_TEXT, using = "Apply as a Freelancer")
     private WebElement developerApplyButton;
 
     //Constructor
     public HomePage(WebDriver driver){
-        this.driver=driver;
+        this.driver = driver;
         driver.get(PAGE_URL);
+
         //Initialise Elements
         PageFactory.initElements(driver, this);
     }
 
+    public boolean isPageOpened() {
+        return heading.getText().toString().contains("Hire the Top");
+    }
+
     public void clickOnDeveloperApplyButton(){
-
         developerApplyButton.click();
-
     }
 }
