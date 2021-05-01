@@ -18,3 +18,10 @@ Yes, despite having the following issues:
 | [Code smell (major)] "for" loop stop conditions should be invariant | A for loop stop condition should test the loop counter against an invariant value | Content Cell  |
 | [Code smell (major)] Remove this unused method parameter "subset" | Method parameter is unused  | Remove unused parameter |
 | [Code smell (major)] Standard outputs should not be used directly to log anything | Message logs should be explicit  | Replace use of `System.out` or `System.err` by a logger |
+
+## Task 2: Resolve technical debt
+
+### a)
+
+The technical debt is 2h 20min. This represents the amount of effort needed to fix all code smells, it also means that, in theory, it should take this amount of time for the fix.
+
