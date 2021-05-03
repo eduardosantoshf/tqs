@@ -31,6 +31,8 @@ Regarding code coverage, there is 70.2% coverage, as well as 41 lines "uncovered
 
 ## Task 3: Define and apply quality gates
 
+For this exercise, I used the previous project.
+
 ### a)
 
 | Metric  | Operator | Value | Reason
