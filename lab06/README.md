@@ -25,3 +25,18 @@ Yes, despite having the following issues:
 
 The technical debt is 2h 20min. This represents the amount of effort needed to fix all code smells, it also means that, in theory, it should take this amount of time for the fix.
 
+### d)
+
+Regarding code coverage, there is 70.2% coverage, as well as 41 lines "uncovered". There are also 52 conditions to cover, making it 75.0% condition coverage.
+
+## Task 3: Define and apply quality gates
+
+### a)
+
+| Metric  | Operator | Value | Reason
+| :--- | :--- | :--- | :--- |
+| Bugs | is greater than | 3 | I believe 3 is a reasonable # of bugs, but this # depends a lot on the size/type of the project |
+| Critical Issues | is greater than | 2 | There should be as minimum critical issues as possible, in my opinion, 2 is a acceptable number |
+| Duplicated Lines (%) | is greater than | 5.0% | The code should have as few duplicated lines as possible, this being said, 5% sounded reasonable |
+| Line Coverage | is less than | 90.0% | 90% felt like an appropriate % |
+| Unit Test Failures | is greater than | 0 | For a fully functional application, there shouldn't be any unit test failures |
